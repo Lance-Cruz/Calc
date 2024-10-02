@@ -19,6 +19,8 @@ public class Calc {
 
             case "multiply": multiply(num1, num2); break;
 
+            case "divide": divide(num1, num2); break;
+
             default: System.out.println("Invalid operation"); break;
         }
     }
@@ -37,4 +39,15 @@ public class Calc {
         int sum = a * b;
         System.out.println("The sum is: " + sum);
     }
+    public static void divide(int a, int b)
+    {
+        if(b == 0){
+            System.out.println("Error can't divide by zero");
+        }
+        else {
+            int sum = a / b;
+            System.out.println("The sum is: " + sum);
+        }
+    }
+
 }
