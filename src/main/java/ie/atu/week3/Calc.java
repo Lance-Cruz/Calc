@@ -21,6 +21,8 @@ public class Calc {
 
             case "divide": divide(num1, num2); break;
 
+            case "power": power(num1, num2); break;
+
             default: System.out.println("Invalid operation"); break;
         }
     }
@@ -48,6 +50,11 @@ public class Calc {
             int sum = a / b;
             System.out.println("The sum is: " + sum);
         }
+    }
+    public static void power(int a, int b)
+    {
+        int sum = (int) Math.pow(a, b);
+        System.out.println(a + " raised to the power of " + b + " = " + sum);
     }
 
 }
